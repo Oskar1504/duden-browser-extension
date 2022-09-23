@@ -1,0 +1,17 @@
+{
+  "name": "Duden Adblocker",
+  "version": "1.0",
+  "description": "Duden Adblocker",
+  "permissions": [
+    "tabs"
+  ],
+  "manifest_version": 3,
+  "content_scripts":[
+    {
+      "matches":[
+        "https://www.duden.de/*"
+      ],
+      "js":["content.js"]
+    }
+  ]
+}
