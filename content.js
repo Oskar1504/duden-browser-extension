@@ -8,7 +8,8 @@ if(document.querySelector(".message-safe-area-holder button")){
 let querySelectorStrings = [
 	'div[id*="ad"]',
 	".tile__wrapper",
-	"div[data-google-query-id]"
+	"div[data-google-query-id]",
+	".aab-overlay"
 ]
 
 
@@ -37,6 +38,8 @@ function removeElements(){
 		}
 	})
 	intervalCount ++
+	
+	document.body.style.overflow = null
 
 	if(!keepInterval || intervalCount >= maxIntervals){
 		clearInterval(interval)
